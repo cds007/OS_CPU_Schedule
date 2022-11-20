@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddNewProcessDialog</class>
+ <widget class="QWidget" name="AddNewProcessDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>89</y>
+     <width>514</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 12pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>   进程名</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>60</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 12pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>进程大小(需要运行时间)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>30</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 12pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>   优先权</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>149</y>
+     <width>461</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>进程1：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Name1lineEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>(空)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Time1lineEdit">
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>(空)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>219</y>
+     <width>461</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>进程2：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Name2lineEdit">
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>(空)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>35</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Time2lineEdit">
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>(空)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>319</y>
+     <width>461</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>进程3：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Name3lineEdit">
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>(空)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>35</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Time3lineEdit">
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>(空)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>480</y>
+     <width>331</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QPushButton" name="ClearpushButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 14pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SurepushButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 14pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="CancelpushButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 14pt &quot;华文行楷&quot;;</string>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QComboBox" name="Pri1comboBox">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>170</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Pri2comboBox">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>260</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Pri3comboBox">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>360</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>691</x>
+     <y>94</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(52, 52, 52, 155), 
+stop:1 rgba(156, 155, 25, 25));
+color: rgb(16, 25, 25);
+ 
+border:0px groove gray;border-radius:
+7px;
+font: 12pt &quot;华文行楷&quot;;</string>
+   </property>
+   <property name="text">
+    <string>  进程大小</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Size1lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>692</x>
+     <y>170</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>(空)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Size2lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>692</x>
+     <y>260</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>(空)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Size3lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>692</x>
+     <y>360</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(247, 247, 247);
+border:1px groove gray;
+border-radius:
+7px;;
+font: 10pt &quot;Candara&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>(空)</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
